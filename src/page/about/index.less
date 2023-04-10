@@ -1,0 +1,574 @@
+@import '../../lib/common.less';
+
+.about_page {
+    height  : 100%;
+    width   : 100%;
+    position: relative;
+    padding : 0 0.3rem;
+
+    // 架构单行
+    .article {
+        // border: 1px solid red;
+        // box-sizing: border-box;
+        overflow-y: scroll;
+        .jiagou_item_col,
+        .jiagou_item_col_right {
+            height         : 0.6rem;
+            display        : flex;
+            justify-content: space-between;
+            flex-direction : column;
+            align-items    : flex-start;
+            padding        : 0.15rem 0 0.3rem 0;
+            padding-left   : 0.3rem;
+
+            .title {
+                font-size  : 0.13rem;
+                font-weight: bold;
+            }
+
+            .hide {
+                opacity: 0;
+            }
+        }
+
+        .jiagou_item_right_out {
+            display    : flex !important;
+            height     : 0.6rem;
+            margin-left: 0.3rem !important;
+            padding    : 0.15rem 0 0.3rem 0;
+            box-sizing : border-box;
+        }
+
+        .jiagou_item_right_out_last{
+            display: flex;
+            justify-content: space-evenly;
+
+            // background-color: red;
+            margin-left: 0.3rem !important;
+            height: 0.3rem !important;
+            padding-bottom: 0;
+            margin-bottom: 0;
+    
+            .jiagou_item_col_right{
+                padding-left: 0 !important;
+                // background-color: aqua;
+                // border:2px solid gold;
+                padding-right: 0rem;
+                width: 24% !important;
+                .value{
+                            font-size: 0.11rem !important;
+                }
+            }
+            .jiagou_item_col_right:nth-of-type(3){
+                // background-color: red;
+                width: 28% !important;
+            }
+        }
+
+
+        .jiagou_item_col_right {
+            color             : rgba(0, 0, 0, 0.8);
+            display           : flex;
+            // justify-content: flex-start;
+            align-items       : flex-start;
+            padding           : 0;
+            padding-right     : 0.3rem;
+            height            : 100%;
+
+            &:first-of-type {
+                // background-color: red;
+                width: 40%;
+            }
+
+            &:nth-of-type(2) {
+                // background-color: gray;
+                width: 30%;
+            }
+
+            &:nth-of-type(3) {
+                // background-color: gray;
+                width: 30%;
+            }
+
+            .title {
+                font-weight: normal !important;
+            }
+
+            .value {
+                font-size: 0.12rem;
+                color    : rgba(0, 0, 0, 0.6);
+            }
+        }
+
+        .jiagou_item_col_right_hide {
+            opacity: 0;
+        }
+    }
+
+
+    // Logo区域
+    .logo_area {
+
+        // background-color: red;
+        .col {
+            height          : 0.6rem;
+            // border-bottom: 1px solid red;
+            z-index         : 88888;
+            width           : 100%;
+
+            .trapezoid {
+                position                  : absolute;
+                display                   : inline-flex;
+                height                    : 0;
+                width                     : 1rem;
+                background-color          : aqua;
+                border-bottom             : 0.4rem solid;
+                border-left               : 0.2rem solid transparent;
+                border-right              : 0.2rem solid transparent;
+                border-bottom-right-radius: 0.1rem;
+                border-bottom-left-radius : 0.1rem;
+                display                   : flex;
+                justify-content           : center;
+                align-items               : flex-start;
+
+                img {
+                    // height: 40%;
+                    width: 80%;
+
+                }
+            }
+        }
+
+        .col:nth-child(1) {
+            background-color: red;
+            display         : flex;
+            justify-content : center;
+        }
+    }
+
+    h4 {
+        color      : white;
+        color      : rgba(0, 0, 0, 0.6);
+        font-weight: bold;
+    }
+
+    .highcharts-credits {
+        display: none;
+    }
+
+    .highcharts-tracker {
+        // border:1px solid red;
+        position: relative;
+
+
+        // background: red
+        // margin-left: -3px;
+        // margin-top: -3px;
+        // left: 15px !important;
+        // padding: 0 !important;
+        // margin:0 !important;
+    }
+
+    // .class="highcharts-node highcharts-point highcharts-node highcharts-point-hover"
+    .highcharts-node {
+        // background-color: aqua;
+        // fill: gold;
+        // background-color: white;
+        border          : 1px solid red !important;
+        stroke          : @primary-color;
+        stroke-dasharray: 3, 3
+    }
+
+    .highcharts-tracker:nth-of-type(2):hover {
+        // stroke:red !important;
+        // background-color: red;
+        color: red !important;
+    }
+
+    #container {
+        min-width: 300px;
+        max-width: 800px;
+        margin   : 1em auto;
+        border   : 1px solid silver;
+    }
+
+    #container h4 {
+        text-transform: none;
+        font-size     : 14px;
+        color         : red;
+        font-weight   : normal;
+    }
+
+    #container p {
+        font-size  : 13px;
+        line-height: 16px;
+        color      : rgba(0, 0, 0, 0.6);
+        font-weight: bold;
+    }
+
+    .initechNode {
+        border       : solid 1px @primary-color;
+        border-radius: 0.05rem;
+        padding      : 0.05rem 0.2rem;
+        // width: 1rem;
+        display      : inline-block;
+        margin       : 0 auto;
+    }
+
+    #initechOrgChart .orgNodeChildGroup .nodeGroupLineVerticalMiddle {
+        border-right: solid 3px @primary-color;
+    }
+
+    #initechOrgChart .nodeLineBorderTop {
+        border-top : solid 3px @primary-color;
+        font-size  : 0.12rem;
+        font-weight: bold;
+        color      : rgba(0, 0, 0, 0.8)
+    }
+
+    .reactOrgChart {
+        // margin-top:0.8rem;
+        width : 100%;
+        height: 90%;
+    }
+
+    .reactOrgChart .orgNodeChildGroup .nodeGroupLineVerticalMiddle {
+        border-right: dashed 1px @primary-color;
+
+
+    }
+
+    .reactOrgChart .nodeLineBorderTop {
+        border-top: dashed 1px @primary-color;
+    }
+
+    .orgNodeChildGroup {
+        [colspan="2"] {
+
+            // 理事会
+            &>.initechNode {
+                background-color: pink;
+                font-size       : 0.12rem;
+                font-weight     : bold;
+                color           : rgba(0, 0, 0, 0.6);
+                padding         : 0.05rem 0.4rem !important;
+            }
+        }
+
+        // 理事长 秘书处
+        #lishizhang {
+            &>.initechNode {
+                // background-color: green !important;
+                font-size  : 0.12rem;
+                font-weight: bold;
+                color      : rgba(0, 0, 0, 0.6);
+                padding    : 0.05rem 0.4rem !important;
+                position   : relative;
+            }
+        }
+
+        #lishizhang_on {
+            &>.initechNode {
+                // background-color: green !important;
+                font-size  : 0.12rem;
+                font-weight: bold;
+                color      : rgba(0, 0, 0, 0.6);
+                padding    : 0.05rem 0.4rem !important;
+                position   : relative;
+            }
+
+            &>.initechNode::after {
+                position       : absolute;
+                content        : "查看详情";
+                left           : 1.2rem;
+                top            : 0.04rem;
+                bottom         : 0;
+                width          : 100px !important;
+                color          : @primary-color  !important;
+                text-decoration: underline;
+                font-weight    : 100;
+            }
+        }
+
+        [colspan="4"] {
+            .initechNode {
+                // background-color:red;
+                font-size  : 0.12rem;
+                font-weight: bold;
+                color      : rgba(0, 0, 0, 0.6);
+            }
+        }
+
+        [colspan="6"]:first-of-type {
+            &>.initechNode:first-of-type {
+                // background-color: red;
+                font-size  : 0.12rem;
+                font-weight: bold;
+                color      : rgba(0, 0, 0, 0.6)
+            }
+        }
+
+        [colspan="10"] {
+            .initechNode {
+                // background-color:pink;
+                font-size  : 0.12rem;
+                font-weight: bold;
+                color      : rgba(0, 0, 0, 0.6)
+            }
+        }
+
+        [colspan="0"] {
+            // background-color: aqua;
+            position: relative;
+
+            .initechNode {
+                // background-color: red;
+                border-top      : solid 1px @primary-color;
+                transform-origin: 0 0;
+                position        : absolute;
+                left            : -0.5rem !important;
+                top             : 0;
+                width           : 3rem;
+                height          : 0.4rem;
+                transform       : rotate(90deg) translateY(-0.75rem);
+                overflow        : hidden;
+                display         : flex;
+                justify-content : center;
+                align-items     : center;
+                word-wrap       : break-work;
+                font-size       : 0.12rem;
+                font-weight     : bold;
+                color           : rgba(0, 0, 0, 0.6);
+                word-break      : break-all;
+
+                &>span {
+                    position       : absolute;
+                    transform      : rotate(-90deg) !important;
+                    display        : inline-flex;
+                    justify-content: center;
+                    align-items    : center;
+                    width          : 0.1rem;
+                    vertical-align : middle;
+                    text-align     : center;
+                    font-size      : 0.12rem;
+                    font-weight    : bold;
+                    color          : rgba(0, 0, 0, 0.6);
+                    word-break     : break-all;
+                    // color:red;
+                }
+            }
+        }
+    }
+
+    // 联盟介绍
+    .introduce_card {
+        // width  : 100%;
+        // border  : 3px solid red;
+        height  : 2rem;
+        margin  : 0.3rem;
+        display : flex;
+        overflow: hidden;
+        position: relative;
+
+        // .col_active_0{
+        //     position: absolute;
+        //     width:72%;
+
+        //     &>img {
+        //         position: absolute;
+        //         width   : 100%;
+        //         height  : 100%;
+        //     }
+        // }
+        .col_init_0 {
+
+            left       : 0;
+            top        : 0;
+            bottom     : 0;
+            // z-index : 77;
+            width      : 72% !important;
+        }
+
+        .col_init_1 {
+            position : absolute;
+            left     : 72%;
+            top      : 0;
+            bottom   : 0;
+            z-index  : 2;
+            transform: translateX(0%);
+        }
+
+        .col_init_2 {
+            position : absolute;
+            left     : 79%;
+            top      : 0;
+            bottom   : 0;
+            z-index  : 3;
+            transform: translateX(0%);
+        }
+
+        .col_init_3 {
+            position: absolute;
+            left    : 86%;
+            top     : 0;
+            bottom  : 0;
+            z-index : 4;
+        }
+
+        .col_init_4 {
+            position: absolute;
+            left    : 93%;
+            top     : 0;
+            bottom  : 0;
+            z-index : 5;
+        }
+
+        // 移入动画
+        .move_in {
+            transform : translateX(-90%);
+            transition: all 1s;
+        }
+
+        // 缩小时
+        .col_short {
+            width          : 10%;
+            position       : absolute;
+            top            : 0;
+            bottom         : 0;
+            left           : 0;
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+
+            span {
+                display: inline-block;
+                width  : 0.2rem;
+            }
+        }
+
+        .col_base_long {
+            position  : absolute;
+            width     : 72%;
+            transition: all 1s;
+
+            &>.content {
+                width              : 100%;
+                height             : 100%;
+                font-size          : 0.12rem;
+                // background-color: red;
+                z-index            : 8;
+                display            : flex;
+                padding            : 0.15rem 0.2rem;
+                justify-content    : space-around;
+                align-items        : center;
+                box-sizing         : border-box;
+
+                span {
+                    // display: inline-block;
+                    // flex:1;
+                    font-size  : 0.18rem;
+                    font-weight: bold;
+                    color      : white;
+                    // border:1px solid red;
+                }
+
+                article {
+
+                    width      : 82%;
+                    height     : 92%;
+                    display    : flex;
+                    align-items: center;
+                    padding    : 0.1rem 0.15rem;
+                    position   : relative;
+
+                    // background-color: rgba(0, 0, 0, 0.8);
+                    &>div {
+                        position        : absolute;
+                        top             : 0;
+                        bottom          : 0;
+                        left            : 0;
+                        right           : 0;
+                        background-color: rgba(0, 0, 0, 0.6);
+
+                    }
+
+                    &>span {
+
+                        font-size     : 0.12rem;
+                        color         : rgba(255, 255, 255, 1);
+                        font-weight   : 100;
+                        text-align    : left;
+                        line-height   : 0.2rem;
+                        z-index       : 1;
+                        // font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        &>.col {
+            width              : 7%;
+            height             : 100%;
+            // border          : 1px solid red;
+            display            : flex;
+            justify-content    : center;
+            align-items        : center;
+            transition         : all 2s;
+            background-color   : yellow;
+
+            &>div {
+                width      : 0.2rem;
+                font-size  : 0.18rem;
+                font-weight: bold;
+                color      : white;
+            }
+        }
+    }
+
+    // 悬浮样式
+    .itemHover:hover {
+        background-color: @primary-color  !important;
+    }
+
+    // 遮罩
+    .mask {
+        position        : fixed;
+        top             : 0;
+        left            : 0;
+        bottom          : 0;
+        right           : 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index         : 7777;
+    }
+
+    // 人物架构区域
+    #about_mask {
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+
+        &>section {
+            position        : absolute;
+            left            : 0;
+            right           : 0;
+            margin          : auto;
+            bottom          : 0;
+            top             : 0;
+            width           : 6rem;
+            // border:1px solid red;
+            background-color: white;
+            border-radius   : 0.1rem;
+            padding         : 0.08rem 0.2rem;
+
+            &>p {
+                width              : 100%;
+                display            : flex;
+                align-items        : center;
+                justify-content    : space-between;
+                // background-color: rebeccapurple;
+            }
+        }
+
+
+    }
+}

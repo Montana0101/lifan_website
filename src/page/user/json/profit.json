@@ -1,0 +1,195 @@
+{
+    "administrativeExpenses": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 5,
+        "name": "administrativeExpenses"
+    },
+    "afterTaxIncome": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 19,
+        "name": "afterTaxIncome"
+    },
+    "assetsImpairmentLoss": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 7,
+        "name": "assetsImpairmentLoss"
+    },
+    "associatesIncome": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 10,
+        "name": "associatesIncome"
+    },
+    "basicEarningsPerShare": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 31,
+        "name": "basicEarningsPerShare"
+    },
+    "businessIncome": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 1,
+        "name": "businessIncome"
+    },
+    "changesIncome": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 8,
+        "name": "changesIncome"
+    },
+    "changesSaleAssets": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 25,
+        "name": "changesSaleAssets"
+    },
+    "companyId": 2,
+    "dilutedEarningsPerShare": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 32,
+        "name": "dilutedEarningsPerShare"
+    },
+    "disposalGains": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 13,
+        "name": "disposalGains"
+    },
+    "earningsPerShare": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 30,
+        "name": "earningsPerShare"
+    },
+    "financialExpenses": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 6,
+        "name": "financialExpenses"
+    },
+    "foreignFinancialStatements": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 28,
+        "name": "foreignFinancialStatements"
+    },
+    "investmentIncome": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 9,
+        "name": "investmentIncome"
+    },
+    "investmentsSaleAssets": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 26,
+        "name": "investmentsSaleAssets"
+    },
+    "measurementChangesLiabilities": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 21,
+        "name": "measurementChangesLiabilities"
+    },
+    "netProfit": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 18,
+        "name": "netProfit"
+    },
+    "nonLossDisposal": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 15,
+        "name": "nonLossDisposal"
+    },
+    "nonOperatingExpenses": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 14,
+        "name": "nonOperatingExpenses"
+    },
+    "nonOperatingIncome": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 12,
+        "name": "nonOperatingIncome"
+    },
+    "nonReclassifiedOtherComprehensiveIncome": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 20,
+        "name": "nonReclassifiedOtherComprehensiveIncome"
+    },
+    "operatingCost": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 2,
+        "name": "operatingCost"
+    },
+    "operatingProfit": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 11,
+        "name": "operatingProfit"
+    },
+    "otherComprehensiveIncome": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 23,
+        "name": "otherComprehensiveIncome"
+    },
+    "partProfitLoss": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 27,
+        "name": "partProfitLoss"
+    },
+    "sellingExpenses": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 4,
+        "name": "sellingExpenses"
+    },
+    "shareInvesteeComprehensiveIncome": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 22,
+        "name": "shareInvesteeComprehensiveIncome"
+    },
+    "shareOtherComprehensiveIncome": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 24,
+        "name": "shareOtherComprehensiveIncome"
+    },
+    "taxExpense": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 17,
+        "name": "taxExpense"
+    },
+    "taxesSurcharges": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 3,
+        "name": "taxesSurcharges"
+    },
+    "totalComprehensiveIncome": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 29,
+        "name": "totalComprehensiveIncome"
+    },
+    "totalProfit": {
+        "accumulatedAmount": null,
+        "currentAmount": null,
+        "lineNo": 16,
+        "name": "totalProfit"
+    }
+}

@@ -1,0 +1,71 @@
+.login,.register {
+    input::-webkit-input-placeholder {
+        /* WebKit browsers 适配谷歌 */
+        color: #BDCADA;
+    }
+
+    input:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 适配火狐 */
+        color: #BDCADA;
+    }
+
+    input::-moz-placeholder {
+        /* Mozilla Firefox 19+ 适配火狐 */
+        color: #BDCADA;
+    }
+
+    input:-ms-input-placeholder {
+        /* Internet Explorer 10+  适配ie*/
+        color: #BDCADA;
+    }
+
+    z-index        : 777;
+    width          :30%;
+    position       :absolute;
+    top            :22%;
+    color          :white;
+    display        :flex;
+    flex-direction :column;
+    justify-content:space-between;
+    align-items:center;
+    font-size: 0.12rem;
+
+    input,button,h3,h2,div {
+        height: 0.38rem
+    }
+
+    input {
+        background-color: white;
+        height          : 0.35rem;
+        width           : 3.3rem;
+        font-size       : 0.12rem;
+        padding         : 0 0.1rem;
+        color:black;
+        border-radius   : 0.05rem;
+    }
+
+    button {
+        background-color: #52AA53;
+        width           : 1.5rem;
+        border-radius   : 0.05rem;
+        font-size: 0.14rem;
+        box-shadow: 0px 0px 0.05rem #d1cccc;
+        margin:0.05rem 0;
+    }
+
+    div {
+        a{
+            color:white;
+            text-decoration: underline;
+        }
+    }
+}
+
+.login{
+    height: 3rem;
+}
+
+.register{
+    height         :4rem;
+
+}

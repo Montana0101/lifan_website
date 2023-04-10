@@ -1,0 +1,89 @@
+@import '~antd/dist/antd.css';
+@import '~antd/lib/style/themes/default.less';
+@import '~antd/dist/antd.less'; // 引入官方提供的 scss 样式入口文件
+
+@primary-color: #51AA52;
+
+.app {
+  text-align    : center;
+  height        : 100%;
+  box-sizing    : border-box;
+  display       : flex;
+  flex-direction: column;
+  font-family   : "思源宋体 !important";
+
+  .header-layout {
+    height: 0.98rem !important;
+    
+    // position: relative;
+    // 顶部导航栏
+    .app-header {
+      position        : relative;
+      top             : 0;
+      left            : 0;
+      right           : 0;
+      margin          : 0 0.3rem;
+      z-index         : 999;
+      // display : flex;
+      color           : white;
+      height     : 0.98rem;
+      background-color: white;
+
+      .header-left {
+        display    : flex;
+        align-items: center;
+        padding    : 0 0.5rem 0 0.5rem;
+        width      : 35%;
+        height     : 0.98rem;
+        float      : left;
+        cursor: pointer;
+      }
+
+      .header-right {
+        float     : right;
+        height    : 0.98rem;
+        flex      : 5;
+        box-sizing: border-box;
+        width     : 65%;
+
+        ul {
+          li:hover {
+            background-color: #51AA52 !important;
+            border-radius   : 0.2rem;
+            color           : white !important;
+          }
+        }
+      }
+
+      .ant-input {
+        &::placeholder {
+          font-size: 0.12rem;
+        }
+      }
+    }
+
+  }
+
+}
+
+
+// 内容区域
+.app>main {
+  // position: fixed;
+  // top: 0.98rem;
+  width    : 100%;
+  // height: auto;
+  flex     : 1;
+}
+
+// 底部区域
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
