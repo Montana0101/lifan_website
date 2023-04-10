@@ -21,7 +21,7 @@ import { NavigateButton } from "../../component/button";
 import { FormOutlined } from "@ant-design/icons";
 import { consult, getNewsList } from "../../apis/index";
 import store from "../../store/index";
-
+import Banner1 from "../../../src/static/imgs/banner1.png";
 import "./index.less";
 
 import stiacn_png from "../../static/imgs/stiacn.png";
@@ -48,7 +48,7 @@ const news = [
     year: "2022",
     month: "08",
     day: "14",
-    title: " 上海碳中和技术创新联盟第一届理事会代表大会顺利召开!",
+    title: " 上海碳中和技术创新立帆第一届理事会代表大会顺利召开!",
     inx: null,
     link: "https://mp.weixin.qq.com/s/lqIH3Fu9Qr1bCNKLm1cRKA",
   },
@@ -56,7 +56,7 @@ const news = [
     year: "2022",
     month: "06",
     day: "15",
-    title: "上海碳中和技术创新联盟“云签约”活动成功举办",
+    title: "上海碳中和技术创新立帆“云签约”活动成功举办",
     inx: "4",
     link: null,
   },
@@ -73,7 +73,7 @@ const news = [
     year: "2021",
     month: "12",
     day: "17",
-    title: " 沪科〔2021〕497号关于同意成立上海碳中和技术创新联盟的批复",
+    title: " 沪科〔2021〕497号关于同意成立上海碳中和技术创新立帆的批复",
     inx: "1",
     link: null,
   },
@@ -81,7 +81,7 @@ const news = [
     year: "2021",
     month: "12",
     day: "13",
-    title: " 上海碳中和技术创新联盟发起人会议在新能源中心召开",
+    title: " 上海碳中和技术创新立帆发起人会议在新能源中心召开",
     inx: "2",
     link: null,
   },
@@ -110,11 +110,12 @@ var industry = [
 ];
 
 const bannerArr1 = [
-  "打造碳中和万亿新市场",
-  "建设碳中和行业新生态",
-  "树立碳中和企业新标杆",
-  "构筑碳中和商业新范式",
-  "开创碳中和产业新未来",
+  
+  "打造百亿新市场",
+  "建设行业新生态",
+  "树立企业新标杆",
+  "构筑商业新范式",
+  "开创产业新未来",
 ];
 
 const bannerArr2 = ["工业节能", "建筑节能", "交通节能"];
@@ -279,7 +280,7 @@ export default function Home(props) {
           <div className="banner_area">
             <h3 style={contentStyle}>
               <img
-                src={AliOss + `/new_version_0518/index_banner_1.png`}
+                src={Banner1}
                 alt=""
               />
               <section
@@ -313,7 +314,7 @@ export default function Home(props) {
                       color: "white",
                     }}
                   >
-                    助力上海市高质量实现“碳达峰、碳中和”的目标
+                    聚焦服务，助力未来
                   </div>
                 </div>
 
@@ -370,7 +371,7 @@ export default function Home(props) {
           </div>
 
           {/* 第二个 */}
-          <div className="banner_area">
+          {/* <div className="banner_area">
             <h3 style={contentStyle}>
               <img
                 src={AliOss + `/new_version_0518/index_banner_2.png`}
@@ -463,7 +464,7 @@ export default function Home(props) {
                 </ul>
               </section>
             </h3>
-          </div>
+          </div> */}
 
           {/* 第三个 */}
           <div className="banner_area">
@@ -512,7 +513,7 @@ export default function Home(props) {
                     color: "white",
                   }}
                 >
-                  技术合作、技术转化、技术服务、金融服务、人才培训
+                  技术合作、技术转化、技术服务、人才培训
                 </div>
                 {/* <div style={{
                    width: "100%", background: "red",
@@ -565,7 +566,7 @@ export default function Home(props) {
             borderRight: CutLine,
           }}
         >
-          关于联盟
+          关于立帆
         </h3>
         <section style={{ border: CutLine, padding: "0.3rem" }}>
           <div style={{ display: "flex" }}>
@@ -581,12 +582,10 @@ export default function Home(props) {
               }}
             >
               <div style={{ textAlign: "left", lineHeight: "0.25rem" }}>
-                联盟全称为上海碳中和技术创新联盟（以下称“联盟”），
-                英文名称为Shanghai Technology Innovation Alliance for Carbon
-                Neutrality， 英文缩写为STIACN。
+                {/* 立帆全称为江苏立帆集团（以下称“立帆”） */}
               </div>
               <div style={{ textAlign: "left", lineHeight: "0.25rem" }}>
-                上海碳中和技术创新联盟是以习近平新时代中国特色社会主义思想为指导，在上海市科技党委和上海市科学技术委员会的领导下，全面贯彻落实国家和上海地方“碳达峰、碳中和”战略部署，在上海市科技党委和上海市科学技术委员会的领导下，携手48家在沪中央企业、科研院（所）、高校、企事业单位、社会团体共同发起成立，通过开展全方位、多领域、高质量的专业活动，搭建产学研用金等紧密结合、创新要素集聚的技术创新平台。
+              江苏立帆是一家专业的服务公司，致力于为各大企业提供优质的人力资源服务。我们与众多知名企业建立了长期的合作关系，为企业提供短期、长期、临时、专业化等各类人力资源派遣服务。 我们的员工团队拥有丰富的行业经验和专业技能，能够迅速适应不同的工作环境和工作内容，为企业提供卓越的人力资源支持。我们秉承诚信、专业、高效的服务理念，为企业提供全方位、多元化的人力资源服务，力求实现企业和员工的双赢。 我们的服务范围涉及多个行业领域，包括制造业、服务业、金融业、信息技术等，覆盖了不同级别、不同岗位的人力资源需求。我们深入了解企业的需求，制定适合企业的人力资源方案，并提供专业的人才筛选、培训、管理等服务，为企业提供高效、精准的人力支持。 我们坚持以客户为中心，不断提升服务质量和水平，赢得了广大客户的信赖和支持。我们将继续秉承专业、务实、创新的服务理念，努力为客户提供更优质、更高效的人力资源服务。
               </div>
               <p
                 style={{
@@ -637,7 +636,7 @@ export default function Home(props) {
                   color: "white",
                 }}
               >
-                联盟任务
+                立帆任务
               </p>
               <ul
                 style={{
@@ -678,181 +677,7 @@ export default function Home(props) {
         </section>
       </div>
 
-      {/* 分割区域 */}
-      <div
-        style={{
-          borderLeft: CutLine,
-          borderBottom: "none",
-          borderRight: CutLine,
-          height: barHeight,
-          margin: "0 0.5rem",
-        }}
-      >
-        <h3
-          style={{
-            fontSize: barFontSize,
-            fontWeight: "bold",
-            display: "flex",
-            margin: 0,
-            padding: "0 0.3rem",
-            color: ThemeColor,
-            height: barHeight,
-            lineHeight: barHeight,
-            borderBottom: "none",
-          }}
-        >
-          联盟动态
-        </h3>
-      </div>
-      {/* 新闻动态 */}
-      <div
-        style={{ borderTop: CutLine, padding: "0 0.5rem" }}
-        className="news_area"
-      >
-        <ul style={{ display: "flex", margin: "0" }}>
-          {list.map((item, index) => {
-            return (
-              <li
-                style={{
-                  flex: 1,
-                  height: "2.2rem",
-                  border: CutLine,
-                  borderTop: "none",
-                  padding: "0.3rem 0.3rem",
-                  display: "flex",
-                  flexDirection: "column",
-                  boxSizing: "border-box",
-                  borderBottom: "none",
-                  position: "relative",
-                  justifyContent: "space-between",
-                  borderRight: `${index == 3 ? CutLine : "none"}`,
-                }}
-              >
-                <div
-                  style={{
-                    color: "rgba(0,0,0,0.6)",
-                    fontSize: "0.12rem",
-                    display: "flex",
-                  }}
-                >
-                  <span>{item.releaseTime.substr(0, 4)}年</span>
-                  <span style={{ marginLeft: "0" }}>
-                    {item.releaseTime.substr(5, 2)}月
-                  </span>
-                  <span style={{ marginLeft: "0" }}>
-                    {item.releaseTime.substr(8, 2)}日
-                  </span>
-                </div>
-                <div
-                  style={{
-                    color: ThemeColor,
-                    fontSize: "0.16rem",
-                    fontWeight: "bold",
-                    display: "flex",
-                    justifyContent: "flex-start",
-                    textAlign: "left",
-                    flex: 1,
-                    padding: "0.12rem 0 0 0",
-                  }}
-                >
-                  {item.title}
-                </div>
-                <p
-                  style={{
-                    width: "1.2rem",
-                    height: "0.4rem",
-                    alignSelf: "flex-end",
-                    marginTop: "0.05rem",
-                    position: "absolute",
-                    right: "0.3rem",
-                    bottom: "0.2rem",
-                  }}
-                >
-                  <div
-                    className="navigate_button"
-                    onClick={() => {
-                      if (item.linking) {
-                        window.open(item.linking);
-                      }else{
-                        window.location.href = `/news/${item.id}`;
-                      }
-                    }}
-                    style={{
-                      color: "#51AA52",
-                      border: `1px solid ${props.color}`,
-                    }}
-                  >
-                    <span>更多信息</span>
-                  </div>
-                </p>
-                {/* {index != 0 ? (
-                  <p
-                    style={{
-                      width: "1.2rem",
-                      height: "0.4rem",
-                      alignSelf: "flex-end",
-                      marginTop: "0.05rem",
-                      position: "absolute",
-                      right: "0.3rem",
-                      bottom: "0.2rem",
-                    }}
-                    onClick={() => {
-                      if (index == 0) {
-                        window.open(
-                          "https://mp.weixin.qq.com/s/lqIH3Fu9Qr1bCNKLm1cRKA",
-                          "_blank"
-                        );
-                      }
-                    }}
-                  >
-                    <NavigateButton
-                      content={"更多信息"}
-                      color={ThemeColor}
-                      path={`/news/${item.inx}`}
-                    />
-                  </p>
-                ) : (
-                  <p
-                    style={{
-                      width: "1.2rem",
-                      height: "0.4rem",
-                      alignSelf: "flex-end",
-                      marginTop: "0.05rem",
-                      position: "absolute",
-                      right: "0.3rem",
-                      bottom: "0.2rem",
-                    }}
-                    onClick={() => {
-                      if (index == 0) {
-                        window.open(
-                          "https://mp.weixin.qq.com/s/lqIH3Fu9Qr1bCNKLm1cRKA",
-                          "_blank"
-                        );
-                      }
-                    }}
-                  >
-                    <div
-                      className="navigate_button"
-                      onClick={() => {
-                        window.open(
-                          "https://mp.weixin.qq.com/s/lqIH3Fu9Qr1bCNKLm1cRKA",
-                          "_blank"
-                        );
-                      }}
-                      style={{
-                        color: "#51AA52",
-                        border: `1px solid ${props.color}`,
-                      }}
-                    >
-                      <span>更多信息</span>
-                    </div>
-                  </p>
-                )} */}
-              </li>
-            );
-          })}
-        </ul>
-      </div>
+    
 
       {/* 业务范围 */}
       <div

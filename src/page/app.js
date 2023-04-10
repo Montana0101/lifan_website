@@ -14,17 +14,19 @@ import { useEffect, useState } from "react";
 import { UserOutlined, SearchOutlined } from "@ant-design/icons";
 import IconSearch from "../static/imgs/search.svg";
 import { messageTips } from "../apis/index";
-import {portrait} from "../apis/index"
+import { portrait } from "../apis/index"
+import Logo from "../../src/static/logo/logo1.png";
 
-const logo = AliOss + "/img/logo.png";
+
+// const logo = AliOss + "/img/logo.png";
 
 const titles = [
   "首页",
   "关于联盟",
   "联盟动态",
-  "业务范围",
-  "专业委员会",
-  "双碳资讯",
+  // "业务范围",
+  // "专业委员会",
+  // "双碳资讯",
   "联系我们",
 ];
 
@@ -48,8 +50,8 @@ let HeaderCmt = () => {
   const [userInfo, setUserInfo] = useState({});
   const [tips, setTips] = useState(0);
   const [hide, setHide] = useState(false);
-  const [result,setResult] = useState(false);
-  const [company,setCompany] = useState("")
+  const [result, setResult] = useState(false);
+  const [company, setCompany] = useState("")
   const history = useHistory();
 
   useEffect(() => {
@@ -100,14 +102,14 @@ let HeaderCmt = () => {
 
   const _portrait = async () => {
     const res = await portrait(company)
-    if(res && res.code == 2000){
+    if (res && res.code == 2000) {
       setResult(res.result)
-      localStorage.setItem('search',JSON.stringify(res.result))
+      localStorage.setItem('search', JSON.stringify(res.result))
       // history.push("/")
       setInx(null)
       setCompany("")
-      history.push("/result",{value:JSON.stringify(res.result)})
-    }else{
+      history.push("/result", { value: JSON.stringify(res.result) })
+    } else {
       message.warn('未查询到该公司数据！')
     }
   }
@@ -129,28 +131,30 @@ let HeaderCmt = () => {
       <header
         className="app-header"
         style={{
-          height: "0.98rem !important",
+          height: "0.78rem !important",
+          // border:"1px solid red"
         }}
       >
-        <section className="header-left" onClick={()=>{
+        <section className="header-left" onClick={() => {
           history.push("/")
           setInx(0);
         }}>
           <img
-            src={logo}
+            src={Logo}
             alt=""
             style={{
-              height: "0.82rem",
+              height: "0.78rem",
               marginRight: "0.1rem",
-              width: "0.82rem",
+              width: "0.78rem",
             }}
           />
           <div
             style={{
               height: "70%",
+              // border:"1px solid red",
               display: "flex",
               flexDirection: "column",
-              justifyContent: "space-between",
+              justifyContent: "center",
               alignItems: "flex-start",
               boxSizing: "border-box",
             }}
@@ -163,15 +167,15 @@ let HeaderCmt = () => {
                 marginTop: "0.05rem",
               }}
             >
-              JSLF
+              LFJT
             </span>
             <span style={{ color: "rgba(0,0,0,0.6)", fontSize: "0.14rem" }}>
-              江苏立帆网络科技
+              立帆集团
             </span>
           </div>
         </section>
         <section className="header-right">
-          <div
+          {/* <div
             style={{
               height: "50%",
               display: "flex",
@@ -193,7 +197,6 @@ let HeaderCmt = () => {
               onKeyDown={(ev) => {
                 if (ev.keyCode == 13) {
                   if(company){
-                    // history.push("/result");
                     _portrait()
                   }else{
                     message.warn("请输入公司名称")
@@ -215,16 +218,7 @@ let HeaderCmt = () => {
                 }
               }}
             />
-            {/* <img alt="" src={IconSearch} style={{ width: "0.15rem", margin: "0 0.15rem 0 0.3rem" }} onClick={() => {
-              if (logined) {
-                setHide(!hide)
-              } else {
-                message.warn({
-                  content: "请登录",
-                  style: { zIndex: 88888888888 }
-                })
-              }
-            }} /> */}
+  
             {!logined ? (
               <div
                 style={{
@@ -339,10 +333,7 @@ let HeaderCmt = () => {
                   cursor: "pointer",
                 }}
                 onClick={() => {
-                  // window.location.href = "/register";
                   history.push("/register");
-                  // console.log("DNsjkandjksa对你撒娇看第三节卡",location1)
-                  // message.warn("功能未开放")
                 }}
               >
                 注册
@@ -366,14 +357,35 @@ let HeaderCmt = () => {
               </div>
             )}
           </div>
+       */}
+          <div style={{
+            height: "50%",
+            display: "flex",
+            justifyContent: "flex-end",
+            alignItems: "center",
+            padding: "0.04rem 0.19rem 0.04rem 0",
+            // border:"1px solid red"
+          }}>
+            <div>
+              <a href="http://101.43.49.47:2023/" target={"_blank"} style={{
+                color: "#7B7B7B",
+                fontSize: "0.12rem",
+                fontWeight: "bold",
+                width: "0.5rem",
+                cursor: "pointer",
+                // border:"1px solid green",
+                paddingRight:"0.19rem"
+              }}>管理系统登录</a>
+            </div>
+          </div>
           <ul
             style={{
               height: "50%",
-              width: "100%",
+              // width: "100%",
               display: "flex",
               alignItems: "center",
-              justifyContent: "space-between",
-              margin: "0 -0.1rem",
+              justifyContent: "flex-end",
+              margin: "0",
               zIndex: 0,
             }}
           >
@@ -381,16 +393,18 @@ let HeaderCmt = () => {
               return (
                 <li
                   style={{
-                    color: index == inx ? "white" : "#51AA52",
+                    color: index == inx ? "white" : "#1d8ab5",
                     fontWeight: "bold",
                     height: "0.3rem",
                     display: "flex",
-                    flex: 1,
+                    width:"1.2rem",
+                    // border:"1px solid green",
+                    // flex: 1,
                     alignItems: "center",
                     justifyContent: "center",
                     fontSize: "0.14rem",
                     cursor: "pointer",
-                    background: index == inx ? "#51AA52" : "white",
+                    background: index == inx ? "#1d8ab5" : "white",
                     borderRadius: "0.2rem",
                   }}
                   onClick={() => {
@@ -415,7 +429,7 @@ let HeaderCmt = () => {
           </ul>
         </section>
       </header>
-      <div style={{ height: "0.98rem" }}></div>
+      <div style={{ height: "0.78rem" }}></div>
     </div>
   );
 };
