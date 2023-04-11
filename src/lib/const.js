@@ -5,7 +5,7 @@ export const AliOss = "https://shbd.oss-cn-beijing.aliyuncs.com/%E7%A2%B3%E4%B8%
 export const IframeUrl = 'https://iframe.stiacn.com'
 
 // 主题色
-export const ThemeColor = '#34a4cf'
+export const ThemeColor = '#51AA52'
 
 export const barFontSize = '0.22rem' // 标题字体大小
 

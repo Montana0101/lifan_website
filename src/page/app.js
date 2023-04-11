@@ -22,18 +22,19 @@ import Logo from "../../src/static/logo/logo1.png";
 
 const titles = [
   "首页",
-  "关于联盟",
-  "联盟动态",
-  // "业务范围",
-  // "专业委员会",
-  // "双碳资讯",
+  "", //关于立帆
+  '',
+  // "联盟动态",
+  "业务范围",
+  "", // '专业委员会'
+  "", // 双碳咨询
   "联系我们",
 ];
 
 var titleArr = [
   { inx: 0, path: "/" },
   { inx: 1, path: "/about" },
-  { inx: 2, path: "/dynamic" },
+  // { inx: 2, path: "/dynamic" },
   // { inx: 3, path: "/" },
   { inx: 3, path: "/scope" },
   { inx: 4, path: "/council" },
@@ -77,9 +78,9 @@ let HeaderCmt = () => {
     } else if (href.indexOf("council") != -1) {
       setInx(4);
     } else if (href.indexOf("dynamic") != -1) {
-      setInx(2);
+      // setInx(2);
     } else if (href.indexOf("/news") != -1) {
-      setInx(2);
+      // setInx(2);
     } else if (href.indexOf("scope") != -1) {
       setInx(3);
     } else if (href.indexOf("consult") != -1) {
@@ -170,7 +171,7 @@ let HeaderCmt = () => {
               LFJT
             </span>
             <span style={{ color: "rgba(0,0,0,0.6)", fontSize: "0.14rem" }}>
-              立帆集团
+              立帆科技
             </span>
           </div>
         </section>
@@ -391,9 +392,9 @@ let HeaderCmt = () => {
           >
             {titles.map((item, index) => {
               return (
-                <li
+                item && <li
                   style={{
-                    color: index == inx ? "white" : "#1d8ab5",
+                    color: index == inx ? "white" : "#51AA52",
                     fontWeight: "bold",
                     height: "0.3rem",
                     display: "flex",
@@ -404,7 +405,7 @@ let HeaderCmt = () => {
                     justifyContent: "center",
                     fontSize: "0.14rem",
                     cursor: "pointer",
-                    background: index == inx ? "#1d8ab5" : "white",
+                    background: index == inx ? "#51AA52" : "white",
                     borderRadius: "0.2rem",
                   }}
                   onClick={() => {

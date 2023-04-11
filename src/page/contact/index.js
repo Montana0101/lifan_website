@@ -98,7 +98,7 @@ const ContactUs = () => {
                   width: "100%",
                 }}
               >
-                上海碳中和技术创新联盟
+                江苏立帆科技
               </p>
               <p
                 style={{
@@ -114,7 +114,7 @@ const ContactUs = () => {
 
                 <span>地址</span>
                 <span style={{ margin: "0 0.06rem 0 0.03rem" }}>:</span>
-                <span>上海市崇明区长兴江南大道1333号3号楼</span>
+                <span>江苏省江阴市珠江路205号608、610室</span>
               </p>
               <p>
                 <PhoneFilled
@@ -122,7 +122,7 @@ const ContactUs = () => {
                 />
                 <span>电话</span>
                 <span style={{ margin: "0 0.06rem 0 0.03rem" }}>:</span>
-                <span>021-66858866</span>
+                <span>待更新</span>
               </p>
               <p>
                 <MailFilled
@@ -130,31 +130,12 @@ const ContactUs = () => {
                 />
                 <span>邮箱</span>
                 <span style={{ margin: "0 0.06rem 0 0.03rem" }}>:</span>
-                <span>green@stian.com</span>
+                <span>lidan@jslifhr.com</span>
               </p>
             </section>
           </div>
         </section>
       </div>
-      <p
-        style={{
-          position: "absolute",
-          bottom: 0,
-          left: 0,
-          right: 0,
-          height: "0.5rem",
-          fontSize: "0.12rem",
-          color: "rgba(0,0,0,0.6)",
-          display: "flex",
-          justifyContent: "right",
-          padding: "0 0.5rem",
-          alignItems: "center",
-          zIndex: 10000,
-        }}
-      >
-        <span>访问量：</span>
-        <span>{amount}</span>
-      </p>
     </div>
   );
 };

@@ -23,8 +23,16 @@ import { consult, getNewsList } from "../../apis/index";
 import store from "../../store/index";
 import Banner1 from "../../../src/static/imgs/banner1.png";
 import "./index.less";
-
-import stiacn_png from "../../static/imgs/stiacn.png";
+import IS1 from "./images/1.png";
+import IS2 from "./images/2.png";
+import IS3 from "./images/3.png";
+import IS4 from "./images/4.webp";
+import IS5 from "./images/5.png";
+import IS6 from "./images/6.webp";
+import IS7 from "./images/7.webp";
+import IS8 from "./images/8.webp";
+import IS9 from "./images/9.webp";
+import stiacn_png from "../../static/imgs/banner3.png";
 import task_png from "../../static/imgs/taskBg.png";
 
 const contentStyle = {
@@ -36,7 +44,7 @@ const contentStyle = {
 
 // 双碳资讯
 const tastArr = [
-  "孵化技术创新平台",
+  "搭建技术创新平台",
   "研究商业创新模式",
   "推动行业标准制定",
   "搭建资本合作平台",
@@ -96,17 +104,16 @@ const news = [
   // },
 ];
 
-var industry = [
-  "化工",
-  "能源",
-  "钢铁",
-  "智慧城市",
-  "产业金融",
-  "交通",
-  "智能汽车",
-  "环境检测",
-  "科研",
-  "碳交易",
+var IndustryData = [
+  {name:"化工",img:IS1},
+  {name:"能源",img:IS2},
+  {name:"钢铁",img:IS3},
+  {name:"纺织",img:IS4},
+  {name:"机械",img:IS9},
+  {name:"电子",img:IS5},
+  {name:"酒店",img:IS6},
+  {name:"餐饮",img:IS7},
+  {name:"娱乐",img:IS8},
 ];
 
 const bannerArr1 = [
@@ -177,7 +184,7 @@ export default function Home(props) {
     store.subscribe(() => {
       setAmount(store.getState().amount);
     });
-    _getNewsList();
+    // _getNewsList();
   }, []);
 
   const _getNewsList = async () => {
@@ -204,7 +211,7 @@ export default function Home(props) {
       className="home_page_1"
     >
       {/* 客服框 */}
-      <section
+      {/* <section
         className="consult"
         onClick={() => {
           setModalVisible(true);
@@ -212,7 +219,7 @@ export default function Home(props) {
       >
         <FormOutlined style={{ fontSize: "0.3rem" }} />
         <span>业务咨询</span>
-      </section>
+      </section> */}
 
       <Modal
         title="编辑信息"
@@ -608,7 +615,7 @@ export default function Home(props) {
                 flex: 1,
               }}
             >
-              <img src={stiacn_png} style={{ width: "100%" }} />
+              <img src={stiacn_png} style={{ width: "100%",borderRadius:"20px" }} />
             </div>
           </div>
 
@@ -636,7 +643,7 @@ export default function Home(props) {
                   color: "white",
                 }}
               >
-                立帆任务
+                立帆目标
               </p>
               <ul
                 style={{
@@ -698,7 +705,7 @@ export default function Home(props) {
             borderTop: "none",
           }}
         >
-          业务范围
+          合作行业
         </h3>
         <h3
           style={{
@@ -753,7 +760,7 @@ export default function Home(props) {
             }}
             className="animate"
           >
-            {industry.map((item, index) => {
+            {IndustryData.map((item, index) => {
               return (
                 <div
                   style={{
@@ -778,9 +785,7 @@ export default function Home(props) {
                     }}
                   >
                     <img
-                      src={
-                        AliOss +
-                        `/new_version/img/index_industry_${index + 1}.png`
+                      src={item.img
                       }
                       alt=""
                       style={{ height: "100%", width: "100%" }}
@@ -799,7 +804,7 @@ export default function Home(props) {
                         fontSize: "0.12rem",
                       }}
                     >
-                      {item}
+                      {item.name}
                     </section>
                   </div>
                 </div>
@@ -809,20 +814,6 @@ export default function Home(props) {
         </h3>
       </div>
 
-      <p
-        style={{
-          height: "0.5rem",
-          fontSize: "0.12rem",
-          color: "rgba(0,0,0,0.6)",
-          display: "flex",
-          justifyContent: "right",
-          padding: "0 0.5rem",
-          alignItems: "center",
-        }}
-      >
-        <span>访问量：</span>
-        <span>{amount}</span>
-      </p>
     </div>
   );
 }
