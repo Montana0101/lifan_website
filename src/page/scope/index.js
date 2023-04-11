@@ -1,13 +1,9 @@
 //  联盟动态
 import React, { useState, useEffect } from "react";
-import { Pagination } from "antd";
 import {
   AliOss,
   ThemeColor,
   CutLine,
-  barFontSize,
-  barHeight,
-  IframeUrl,
 } from "../../lib/const";
 import { getNewsList } from "../../apis/index";
 import scopeBg from "../../static/imgs/scope_bg.png";

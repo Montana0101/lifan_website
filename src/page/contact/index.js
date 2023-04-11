@@ -98,7 +98,7 @@ const ContactUs = () => {
                   width: "100%",
                 }}
               >
-                江苏立帆科技
+                立帆科技
               </p>
               <p
                 style={{

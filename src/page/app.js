@@ -376,7 +376,7 @@ let HeaderCmt = () => {
                 cursor: "pointer",
                 // border:"1px solid green",
                 paddingRight:"0.19rem"
-              }}>管理系统登录</a>
+              }}>后台链接</a>
             </div>
           </div>
           <ul
