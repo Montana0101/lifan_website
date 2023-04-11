@@ -10,9 +10,9 @@ const ContactUs = () => {
   useEffect(() => {
     const main = document.getElementById("main_container");
     main.style.height = "100%";
-    store.subscribe(() => {
-      setAmount(store.getState().amount);
-    });
+    // store.subscribe(() => {
+    //   setAmount(store.getState().amount);
+    // });
   }, []);
 
   return (
