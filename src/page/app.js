@@ -15,7 +15,7 @@ import { UserOutlined, SearchOutlined } from "@ant-design/icons";
 import IconSearch from "../static/imgs/search.svg";
 import { messageTips } from "../apis/index";
 import { portrait } from "../apis/index"
-import Logo from "../../src/static/logo/logo1.png";
+import Logo from "../../src/static/logo/logo2.png";
 
 
 // const logo = AliOss + "/img/logo.png";
@@ -162,13 +162,13 @@ let HeaderCmt = () => {
           >
             <span
               style={{
-                fontSize: "0.2rem",
+                fontSize: "0.16rem",
                 fontWeight: "bold",
                 color: "black",
-                marginTop: "0.05rem",
+                // marginTop: "0.05rem",
               }}
             >
-              LFJT
+              LFKJ
             </span>
             <span style={{ color: "rgba(0,0,0,0.6)", fontSize: "0.14rem" }}>
               立帆科技

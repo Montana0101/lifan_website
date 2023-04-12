@@ -105,19 +105,19 @@ const news = [
 ];
 
 var IndustryData = [
-  {name:"化工",img:IS1},
-  {name:"能源",img:IS2},
-  {name:"钢铁",img:IS3},
-  {name:"纺织",img:IS4},
-  {name:"机械",img:IS9},
-  {name:"电子",img:IS5},
-  {name:"酒店",img:IS6},
-  {name:"餐饮",img:IS7},
-  {name:"娱乐",img:IS8},
+  { name: "化工", img: IS1 },
+  { name: "能源", img: IS2 },
+  { name: "钢铁", img: IS3 },
+  { name: "纺织", img: IS4 },
+  { name: "机械", img: IS9 },
+  { name: "电子", img: IS5 },
+  { name: "酒店", img: IS6 },
+  { name: "餐饮", img: IS7 },
+  { name: "娱乐", img: IS8 },
 ];
 
 const bannerArr1 = [
-  
+
   "打造百亿新市场",
   "建设行业新生态",
   "树立企业新标杆",
@@ -192,17 +192,16 @@ export default function Home(props) {
       page: 1,
       limit: 4,
     });
-    try{
+    try {
       if (res.code === 2000 && res.success) {
         setList(res.result.data);
-      }else{
+      } else {
         message.warn("获取新闻失败")
       }
-    }catch(err){
-      console.log("异常报错",err)
+    } catch (err) {
+      console.log("异常报错", err)
       message.error("异常错误i")
     }
- 
   };
 
   return (
@@ -349,8 +348,7 @@ export default function Home(props) {
                         <img
                           src={
                             AliOss +
-                            `/new_version_0518/index_banner_1_icon_${
-                              index + 1
+                            `/new_version_0518/index_banner_1_icon_${index + 1
                             }.png`
                           }
                           alt=""
@@ -592,7 +590,7 @@ export default function Home(props) {
                 {/* 立帆全称为江苏立帆集团（以下称“立帆”） */}
               </div>
               <div style={{ textAlign: "left", lineHeight: "0.25rem" }}>
-              江苏立帆是一家专业的服务公司，致力于为各大企业提供优质的人力资源服务。我们与众多知名企业建立了长期的合作关系，为企业提供短期、长期、临时、专业化等各类人力资源派遣服务。 我们的员工团队拥有丰富的行业经验和专业技能，能够迅速适应不同的工作环境和工作内容，为企业提供卓越的人力资源支持。我们秉承诚信、专业、高效的服务理念，为企业提供全方位、多元化的人力资源服务，力求实现企业和员工的双赢。 我们的服务范围涉及多个行业领域，包括制造业、服务业、金融业、信息技术等，覆盖了不同级别、不同岗位的人力资源需求。我们深入了解企业的需求，制定适合企业的人力资源方案，并提供专业的人才筛选、培训、管理等服务，为企业提供高效、精准的人力支持。 我们坚持以客户为中心，不断提升服务质量和水平，赢得了广大客户的信赖和支持。我们将继续秉承专业、务实、创新的服务理念，努力为客户提供更优质、更高效的人力资源服务。
+                江苏立帆是一家专业的服务公司，致力于为各大企业提供优质的人力资源服务。我们与众多知名企业建立了长期的合作关系，为企业提供短期、长期、临时、专业化等各类人力资源派遣服务。 我们的员工团队拥有丰富的行业经验和专业技能，能够迅速适应不同的工作环境和工作内容，为企业提供卓越的人力资源支持。我们秉承诚信、专业、高效的服务理念，为企业提供全方位、多元化的人力资源服务，力求实现企业和员工的双赢。 我们的服务范围涉及多个行业领域，包括制造业、服务业、金融业、信息技术等，覆盖了不同级别、不同岗位的人力资源需求。我们深入了解企业的需求，制定适合企业的人力资源方案，并提供专业的人才筛选、培训、管理等服务，为企业提供高效、精准的人力支持。 我们坚持以客户为中心，不断提升服务质量和水平，赢得了广大客户的信赖和支持。我们将继续秉承专业、务实、创新的服务理念，努力为客户提供更优质、更高效的人力资源服务。
               </div>
               <p
                 style={{
@@ -601,13 +599,13 @@ export default function Home(props) {
                   alignSelf: "flex-start",
                   marginTop: "0.05rem",
                 }}
-                onClick={() => {}}
+                onClick={() => { }}
               >
-                <NavigateButton
+                {/* <NavigateButton
                   content={"更多信息"}
                   color={ThemeColor}
                   path={`/about`}
-                />
+                /> */}
               </p>
             </div>
             <div
@@ -615,7 +613,7 @@ export default function Home(props) {
                 flex: 1,
               }}
             >
-              <img src={stiacn_png} style={{ width: "100%",borderRadius:"20px" }} />
+              <img src={stiacn_png} style={{ width: "100%", borderRadius: "20px" }} />
             </div>
           </div>
 
@@ -665,8 +663,7 @@ export default function Home(props) {
                       <img
                         src={
                           AliOss +
-                          `/new_version_0518/index_mission_icon_${
-                            index + 1
+                          `/new_version_0518/index_mission_icon_${index + 1
                           }.png`
                         }
                         alt=""
@@ -684,7 +681,7 @@ export default function Home(props) {
         </section>
       </div>
 
-    
+
 
       {/* 业务范围 */}
       <div

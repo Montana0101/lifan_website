@@ -2,11 +2,8 @@ import React, { useEffect, useState } from "react";
 import { AliOss, ThemeColor, CutLine } from "../../lib/const";
 import { EnvironmentFilled, PhoneFilled, MailFilled } from "@ant-design/icons";
 import pos from "../../static/imgs/position.png";
-import store from "../../store/index";
 
 const ContactUs = () => {
-  const [amount, setAmount] = useState(0);
-
   useEffect(() => {
     const main = document.getElementById("main_container");
     main.style.height = "100%";
