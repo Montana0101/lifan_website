@@ -1,18 +1,12 @@
 import "./app.less";
-import { Input, Button, message } from "antd";
+import { Button, message } from "antd";
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
   withRouter,
   useHistory,
-  useNavigate,
 } from "react-router-dom";
 import Routers from "../route/index";
-import { AliOss, ThemeColor, CutLine } from "../lib/const";
 import { useEffect, useState } from "react";
-import { UserOutlined, SearchOutlined } from "@ant-design/icons";
-import IconSearch from "../static/imgs/search.svg";
 import { messageTips } from "../apis/index";
 import { portrait } from "../apis/index"
 import Logo from "../../src/static/logo/logo2.png";
@@ -152,7 +146,6 @@ let HeaderCmt = () => {
           <div
             style={{
               height: "70%",
-              // border:"1px solid red",
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
@@ -165,7 +158,6 @@ let HeaderCmt = () => {
                 fontSize: "0.16rem",
                 fontWeight: "bold",
                 color: "black",
-                // marginTop: "0.05rem",
               }}
             >
               LFKJ
@@ -365,7 +357,6 @@ let HeaderCmt = () => {
             justifyContent: "flex-end",
             alignItems: "center",
             padding: "0.04rem 0.19rem 0.04rem 0",
-            // border:"1px solid red"
           }}>
             <div>
               <a href="http://101.43.49.47:2023/" target={"_blank"} style={{
@@ -374,9 +365,12 @@ let HeaderCmt = () => {
                 fontWeight: "bold",
                 width: "0.5rem",
                 cursor: "pointer",
-                // border:"1px solid green",
-                paddingRight:"0.19rem"
+                borderBottom: "1px solid green",
+                padding: "0.05rem 0rem",
+                marginRight: "0.15rem"
+                // border:"1px solid red"
               }}>后台链接</a>
+
             </div>
           </div>
           <ul
@@ -398,7 +392,7 @@ let HeaderCmt = () => {
                     fontWeight: "bold",
                     height: "0.3rem",
                     display: "flex",
-                    width:"1.2rem",
+                    width: "1.2rem",
                     // border:"1px solid green",
                     // flex: 1,
                     alignItems: "center",

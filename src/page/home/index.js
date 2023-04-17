@@ -317,7 +317,6 @@ export default function Home(props) {
                       height: "0.5rem",
                       fontSize: "0.3rem",
                       fontWeight: "bold",
-                      color: "white",
                     }}
                   >
                     聚焦服务，助力未来
@@ -342,7 +341,7 @@ export default function Home(props) {
                           justifyContent: "center",
                           position: "relative",
                           width: "2rem",
-                          boxSizing: "border-box",
+                          boxSizing: "border-box"
                         }}
                       >
                         <img
@@ -352,7 +351,7 @@ export default function Home(props) {
                             }.png`
                           }
                           alt=""
-                          style={{ width: "0.4rem", height: "0.4rem" }}
+                          style={{ width: "0.4rem", height: "0.4rem"}}
                         />
                         <section
                           style={{
@@ -810,7 +809,9 @@ export default function Home(props) {
           </section>
         </h3>
       </div>
-
+      <footer>
+          <a href="https://beian.miit.gov.cn/" target="_blank">备案号：苏ICP备2023007444号-1</a>
+        </footer>
     </div>
   );
 }
